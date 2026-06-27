@@ -22,260 +22,346 @@
 
     <section class="rules-section" id="rules">
         <div class="container">
-            <h1 class="rules-title">DrevSMP REGELN & STRAFSYSTEM</h1>
-            <p class="rules-subtitle">Detailliertes Regelwerk für den professionellen Betrieb unseres Servers</p>
-            <p class="last-updated">⚠️ Diese Regeln sind verbindlich. Nichtbeachtung führt zu Strafen!</p>
+            <h1 class="rules-title">DrevSMP SERVER REGELN</h1>
+            <p class="rules-subtitle">Vollständiges und verbindliches Regelwerk für fairen und sicheren Spielbetrieb</p>
+            <div class="rules-notice">⚠️ Die Nichtbeachtung dieser Regeln führt zu Verwarnungen, Mutes, Tempbans oder Permabans</div>
 
-            <!-- Section 1: Grundlegende Regeln -->
-            <div class="rules-section-box">
-                <h2 class="rules-section-title">§ 1 GRUNDLEGENDE VERHALTENSREGELN</h2>
-                <div class="rules-content">
-                    <div class="rule-item">
-                        <div class="rule-header">§ 1.1 - Respektvolles Verhalten</div>
-                        <p>Alle Spieler müssen sich respektvoll gegenüber anderen Spielern, Moderatoren und Administratoren verhalten. Beleidigungen, Diskriminierung, Rassismus und Mobbing sind strengstens verboten.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Verwarnungen (3x) → Mute (1-7 Tage) → Tempban (1-30 Tage) → Permaban</div>
+            <!-- Section 1: PlotSquared & Grundstücke -->
+            <div class="rules-box">
+                <h2 class="rules-heading">§ 1 | PLOTSQUARED SYSTEM & GRUNDSTÜCKE</h2>
+                
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 1.1 - Claim-Regeln</h3>
+                    <div class="rule-text">
+                        <p><strong>Definition:</strong> Ein Claim ist dein persönliches Grundstück, das nur du bebaubar machst. Es ist durch das PlotSquared System geschützt.</p>
+                        <ul class="rule-list">
+                            <li>Du kannst maximal <strong>2 Claims pro Account</strong> besitzen</li>
+                            <li>Jedes Claim hat eine maximale Größe von <strong>100x100 Blöcken</strong></li>
+                            <li>Claims müssen mit dem Befehl <code>/plot claim</code> aktiviert werden</li>
+                            <li>Du kannst bis zu 10 weitere Spieler als Co-Owner hinzufügen</li>
+                            <li>Andere Spieler können nicht auf deinem Claim bauen, abbauen oder verändern</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Plot-Abriss + Tempban (3-7 Tage)</div>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 1.2 - Keine Hacks/Cheats</div>
-                        <p>Die Verwendung von Hacks, Cheats, Mods (außer erlaubten) oder anderen unfairen Mitteln ist absolut verboten. Dies führt zu sofortigen Bans.</p>
-                        <div class="rule-penalty">⚠️ Strafe: SOFORT PERMABAN - Keine Ausnahmen!</div>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 1.2 - Bauqualität & Standards</h3>
+                    <div class="rule-text">
+                        <p><strong>Minimalstandards:</strong> Alle Bauten müssen einen gewissen Qualitätsstandard erfüllen. Extrem hässliche oder unfertige Bauten können abgerissen werden.</p>
+                        <ul class="rule-list">
+                            <li>Verwende passende Block-Kombinationen und nicht nur 1 Material</li>
+                            <li>Deine Bauten sollten ein erkennbares Ziel/Design haben</li>
+                            <li>Schwimmende Blöcke oder Spam-Bauten sind nicht erlaubt</li>
+                            <li>Terraforming muss ordentlich und realistisch aussehen</li>
+                            <li>Admin können bei extrem schlechter Qualität ein Ultimatum setzen</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Verwarnung → 7 Tage Verbesserungsfrist → Abriss</div>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 1.3 - Kein Spam</div>
-                        <p>Wiederholte Nachrichten, CAPS LOCK Missbrauch und Spam sind nicht erlaubt. Dies gilt auch für Private Messages.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Mute (1-3 Tage) → Tempban bei Wiederholung</div>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 1.3 - Inaktivität & Claim-Freigabe</h3>
+                    <div class="rule-text">
+                        <p><strong>Aktivitätspflicht:</strong> Claim müssen regelmäßig genutzt werden. Inaktive Claims werden freigegeben.</p>
+                        <ul class="rule-list">
+                            <li><strong>30 Tage Inaktivität:</strong> Admin können die Claim freigeben</li>
+                            <li><strong>60 Tage Inaktivität:</strong> Claim wird automatisch und endgültig gelöscht</li>
+                            <li>Spieler werden per Discord gewarnt, bevor ihr Claim gelöscht wird</li>
+                            <li>Nach Freigabe können andere Spieler das Grundstück claimen</li>
+                            <li>Der alte Spieler kann sein Claim nicht zurückfordern</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Automatische Claim-Freigabe oder -Löschung</div>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 1.4 - Keine Werbung</div>
-                        <p>Werbung für andere Server, Dienste oder externe Links ist strengstens verboten. Ausnahmen nur mit Admin-Genehmigung.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Mute (7 Tage) → Tempban (3-7 Tage) bei Wiederholung</div>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 1.5 - Keine Alt-Accounts</div>
-                        <p>Das Erstellen von mehreren Accounts zur Umgehung von Bans oder für unfaire Spielweise ist nicht erlaubt.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Alle Accounts PERMABAN</div>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 1.4 - Nachbarschaftlichkeit</h3>
+                    <div class="rule-text">
+                        <p><strong>Respekt vor anderen:</strong> Baue mit Abstand und Respekt zu deinen Nachbarn.</p>
+                        <ul class="rule-list">
+                            <li>Halte mindestens <strong>5 Blöcke Abstand</strong> zu fremden Claims ein</li>
+                            <li>Deine Gebäude sollen nicht zu nah an die Grenzen der Nachbarn reichen</li>
+                            <li>Spam-Gebäude neben anderen Bauten sind nicht erlaubt</li>
+                            <li>Laut und hässlich Bauten können abgerissen werden wenn sie die Umgebung ruinieren</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Abriss + Verwarnung oder Tempban</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 2: Griefing & Eigentum -->
-            <div class="rules-section-box">
-                <h2 class="rules-section-title">§ 2 GRIEFING & EIGENTUMSSCHUTZ</h2>
-                <div class="rules-content">
-                    <div class="rule-item">
-                        <div class="rule-header">§ 2.1 - ABSOLUTES GRIEFING VERBOT</div>
-                        <p>Das Zerstören, Verändern oder Beschädigen von Gebäuden, Strukturen oder Landschaften anderer Spieler ist STRIKT VERBOTEN. Dies ist unsere wichtigste Regel!</p>
-                        <div class="rule-penalty">⚠️ Strafe: SOFORT TEMPBAN (7-30 Tage) + Revert + Permaban bei Wiederholung!</div>
+            <!-- Section 2: Griefing & Diebstahl -->
+            <div class="rules-box">
+                <h2 class="rules-heading">§ 2 | GRIEFING, DIEBSTAHL & SCHUTZ</h2>
+                
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 2.1 - ABSOLUTES GRIEFING VERBOT</h3>
+                    <div class="rule-text">
+                        <p><strong>Dies ist unsere WICHTIGSTE Regel!</strong> Das Zerstören, Verändern oder Beschädigen von Bauten anderer Spieler ist STRIKT VERBOTEN.</p>
+                        <ul class="rule-list">
+                            <li>Griefing = das Verändern einer fremden Bauten ohne Erlaubnis</li>
+                            <li>Dies gilt für alle Blöcke, Mobs, Items und Einrichtungen</li>
+                            <li>Auch kleine Änderungen sind Griefing (ein Block entfernen = Griefing!)</li>
+                            <li>PlotSquared sperrt fremde Plots automatisch - missachte dies nicht</li>
+                            <li>Sicherheitslücken ausnutzen ist auch Griefing</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> SOFORT 7-30 Tage TEMPBAN + Rollback + Geldstrafe + bei Wiederholung PERMABAN</div>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 2.2 - Claim System</div>
-                        <p>Alle Grundstücke müssen mit dem Claim-System beansprucht werden. Baue nur auf deinen geclaimten Grundstücken!</p>
-                        <div class="rule-penalty">⚠️ Strafe: Abriss der illegalen Struktur + Tempban</div>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 2.2 - Diebstahl & Container</h3>
+                    <div class="rule-text">
+                        <p><strong>Keine fremden Items nehmen!</strong> Das Stehlen von Items aus Chests, Furnaces oder anderen Containern ist verboten.</p>
+                        <ul class="rule-list">
+                            <li>Fremde Container sind tabu - auch wenn sie offen stehen</li>
+                            <li>Das Looten von fremden Bases ist nicht erlaubt</li>
+                            <li>Geldautomaten und Shops der anderen Spieler gehören nicht dir</li>
+                            <li>Items die herumliegende sind nach 24h Eigentum des Finders</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> 3-14 Tage TEMPBAN + Items zurück + Geldstrafe (2x Itemwert)</div>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 2.3 - Kein Stehlen</div>
-                        <p>Das Stehlen von Gegenständen aus Chests, Furnaces oder anderen Behältern anderer Spieler ist verboten.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Tempban (3-14 Tage) + Gegenstände zurück + Geldstrafe</div>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 2.4 - Nachbarschaftlichkeit</div>
-                        <p>Respektiere die Grundstücke deiner Nachbarn. Halte einen Mindestabstand von 5 Blöcken zu fremden Claims.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Abriss + Verwarnung + ggf. Tempban</div>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 2.3 - Anti-Cheat & Exploits</h3>
+                    <div class="rule-text">
+                        <p><strong>Keine unfairen Tricks!</strong> Die Benutzung von Sicherheitslücken oder Exploits ist verboten.</p>
+                        <ul class="rule-list">
+                            <li>Das Ausnutzen von Duplication-Glitches ist verboten</li>
+                            <li>Game-Breaking Exploits müssen sofort Mods gemeldet werden</li>
+                            <li>Wenn du versehentlich einen Exploit entdeckst → sofort melden!</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> SOFORT PERMABAN + ggf. Anzeige</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 3: Chat & Kommunikation -->
-            <div class="rules-section-box">
-                <h2 class="rules-section-title">§ 3 CHAT- & KOMMUNIKATIONSREGELN</h2>
-                <div class="rules-content">
-                    <div class="rule-item">
-                        <div class="rule-header">§ 3.1 - Sprache</div>
-                        <p>Der Chat erfolgt primär auf DEUTSCH. Englisch ist erlaubt, aber Deutsch hat Priorität.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Verwarnung → Mute bei Wiederholung</div>
+            <!-- Section 3: Economy & Trading -->
+            <div class="rules-box">
+                <h2 class="rules-heading">§ 3 | ECONOMY, JOBS & TRADING</h2>
+                
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 3.1 - Economy System</h3>
+                    <div class="rule-text">
+                        <p><strong>Spielwährung:</strong> Die Währung auf DrevSMP sind Coins ($). Diese können verdient, ausgegeben und getauscht werden.</p>
+                        <ul class="rule-list">
+                            <li>Verdiene Coins durch Jobs, Verkäufe und Events</li>
+                            <li>Coins können für Plot-Upgrades, Items und mehr verwendet werden</li>
+                            <li>Geld-Glitches müssen sofort dem Mod-Team gemeldet werden</li>
+                            <li>Coin-Betrug führt zu sofortigem PERMABAN</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Coins werden resettet + Tempban</div>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 3.2 - Keine unangemessenen Inhalte</div>
-                        <p>Gore, NSFW-Inhalte, Gewalt und andere unangemessene Inhalte sind verboten. Der Server ist familienfreundlich!</p>
-                        <div class="rule-penalty">⚠️ Strafe: Mute (3-7 Tage) → Tempban bei schweren Fällen</div>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 3.2 - Jobs & Verdienst</h3>
+                    <div class="rule-text">
+                        <p><strong>Jobs:</strong> Wähle einen Job und verdiene Erfahrung und Geld.</p>
+                        <ul class="rule-list">
+                            <li><strong>Verfügbare Jobs:</strong> Farmer, Miner, Lumberjack, Fisher, Builder, Merchant</li>
+                            <li>Für jede abgeschlossene Action verdienst du Geld</li>
+                            <li>Du kannst deinen Job mit <code>/jobs join [jobname]</code> wechseln</li>
+                            <li>Je höher dein Level, desto mehr Geld verdienst du</li>
+                            <li>Unterschiedliche Jobs haben unterschiedliche Verdienstmöglichkeiten</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Keine - Jobs sind optional!</div>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 3.3 - Doxxing & Privatsphäre</div>
-                        <p>Das Teilen privater Informationen, Daten oder IPs von anderen Spielern ist absolut verboten.</p>
-                        <div class="rule-penalty">⚠️ Strafe: SOFORT PERMABAN + Meldung an Behörden</div>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 3.4 - Keine Diskriminierung</div>
-                        <p>Rassismus, Sexismus, Homo- oder Transphobie und andere Formen der Diskriminierung sind strengstens verboten.</p>
-                        <div class="rule-penalty">⚠️ Strafe: SOFORT PERMABAN</div>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 3.3 - Shop & Trading</h3>
+                    <div class="rule-text">
+                        <p><strong>ItemShop & Spieler-Handel:</strong> Kaufe und verkaufe Items fair und ohne Betrug.</p>
+                        <ul class="rule-list">
+                            <li>Der GlobalShop hat feste Preise für Standard-Items</li>
+                            <li>Spieler können eigene Shops in ihren Claims erstellen</li>
+                            <li>Offline-Trading ist verfügbar - deine Shop läuft auch wenn du offline bist</li>
+                            <li>Unfaire Preise (z.B. 1 Dirt = 1 Million $) können gemeldet werden</li>
+                            <li>Trading-Betrüger werden hart bestraft</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Tempban + Betrag zurück + Verwarnung</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 4: Bauen & Konstruktion -->
-            <div class="rules-section-box">
-                <h2 class="rules-section-title">§ 4 BAU- & KONSTRUKTIONSREGELN</h2>
-                <div class="rules-content">
-                    <div class="rule-item">
-                        <div class="rule-header">§ 4.1 - Qualitätsstandard</div>
-                        <p>Alle Bauten müssen einen Mindestqualitätsstandard erfüllen. Extrem hässliche oder unfertige Bauten können abgerissen werden.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Verwarnung + 7 Tage zur Verbesserung → Abriss</div>
+            <!-- Section 4: Clans -->
+            <div class="rules-box">
+                <h2 class="rules-heading">§ 4 | CLAN SYSTEM</h2>
+                
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 4.1 - Clan-Gründung & Verwaltung</h3>
+                    <div class="rule-text">
+                        <p><strong>Clans:</strong> Gründe dein Clan oder tritt einem bei und arbeite mit anderen zusammen.</p>
+                        <ul class="rule-list">
+                            <li>Clans können mit <code>/clan create [name]</code> gegründet werden</li>
+                            <li>Clan-Namen müssen PG-13 konform sein</li>
+                            <li>Ein Clan braucht mind. 2 Spieler</li>
+                            <li>Der Gründer ist automatisch Leader des Clans</li>
+                            <li>Leader können Member einladen, entfernen und Rollen vergeben</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Clan-Auflösung bei Verstoß gegen Clan-Regeln</div>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 4.2 - Aktivität & Inaktivität</div>
-                        <p>Claims, die länger als 30 Tage nicht aktiv genutzt werden, können freigegeben werden. Bei 60 Tagen wird der Claim automatisch gelöscht.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Automatische Freigabe des Claims</div>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 4.3 - Plot-Größe</div>
-                        <p>Pro Spieler sind maximal 2 Claims erlaubt. Die maximale Größe pro Claim beträgt 100x100 Blöcke.</p>
-                        <div class="rule-penalty">⚠️ Strafe: Zusätzliche Claims werden gelöscht</div>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 4.4 - Redstone & Mechaniken</div>
-                        <p>Extrem komplexe Redstone-Maschinen, die den Server laggen lassen, sind verboten. Server-Performance hat Priorität!</p>
-                        <div class="rule-penalty">⚠️ Strafe: Maschine wird abgebaut + Tempban bei Wiederholung</div>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 4.2 - Clan-Territorium</h3>
+                    <div class="rule-text">
+                        <p><strong>Clan-Gebiete:</strong> Clans können ein Territorium beanspruchen.</p>
+                        <ul class="rule-list">
+                            <li>Clan-Territory bietet Schutz vor Grief und Übernahmen</li>
+                            <li>Nur Clan-Member können dort bauen</li>
+                            <li>Das Territory ist 50x50 Blöcke groß</li>
+                            <li>Territorial-Kriege sind nicht erlaubt - arbeitet friedlich zusammen!</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Territory-Sperrung oder Clan-Auflösung</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 5: Strafsystem -->
-            <div class="rules-section-box">
-                <h2 class="rules-section-title">§ 5 DETAILLIERTES STRAFSYSTEM</h2>
-                <div class="rules-content">
-                    <table class="penalty-table">
-                        <thead>
-                            <tr>
-                                <th>Vergehen</th>
-                                <th>Erste Strafe</th>
-                                <th>Zweite Strafe</th>
-                                <th>Dritte Strafe</th>
-                                <th>Maximale Strafe</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Spam/Beleidigung</td>
-                                <td>Verwarnung</td>
-                                <td>Mute 1-3 Tage</td>
-                                <td>Tempban 3 Tage</td>
-                                <td>Permaban</td>
-                            </tr>
-                            <tr>
-                                <td>Leichtes Griefing</td>
-                                <td>Abriss + Verwarnung</td>
-                                <td>Tempban 7 Tage</td>
-                                <td>Tempban 14 Tage</td>
-                                <td>Permaban</td>
-                            </tr>
-                            <tr>
-                                <td>Schweres Griefing</td>
-                                <td>Tempban 7 Tage</td>
-                                <td>Tempban 14 Tage</td>
-                                <td>Tempban 30 Tage</td>
-                                <td>Permaban</td>
-                            </tr>
-                            <tr>
-                                <td>Hacken/Cheats</td>
-                                <td colspan="4" style="color: #ff006e; font-weight: bold;">SOFORT PERMABAN - KEINE AUSNAHMEN!</td>
-                            </tr>
-                            <tr>
-                                <td>Werbung</td>
-                                <td>Mute 7 Tage</td>
-                                <td>Tempban 3-7 Tage</td>
-                                <td>Tempban 14 Tage</td>
-                                <td>Permaban</td>
-                            </tr>
-                            <tr>
-                                <td>Diebstahl</td>
-                                <td>Tempban 3-7 Tage</td>
-                                <td>Tempban 14 Tage</td>
-                                <td>Tempban 30 Tage</td>
-                                <td>Permaban</td>
-                            </tr>
-                            <tr>
-                                <td>Doxxing/Privatsphäre</td>
-                                <td colspan="4" style="color: #ff006e; font-weight: bold;">SOFORT PERMABAN + ANZEIGE!</td>
-                            </tr>
-                            <tr>
-                                <td>Diskriminierung</td>
-                                <td colspan="4" style="color: #ff006e; font-weight: bold;">SOFORT PERMABAN!</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Section 5: Chat & Verhalten -->
+            <div class="rules-box">
+                <h2 class="rules-heading">§ 5 | CHAT, VERHALTEN & COMMUNITY</h2>
+                
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 5.1 - Respekt & Umgangsformen</h3>
+                    <div class="rule-text">
+                        <p><strong>Community-Regeln:</strong> Behandle alle mit Respekt und Höflichkeit.</p>
+                        <ul class="rule-list">
+                            <li>Keine Beleidigungen, Mobbing oder Cyberbullying</li>
+                            <li>Keine Diskriminierung (Rassismus, Sexismus, Transphobie, etc.)</li>
+                            <li>Respekt vor Mods und Admins - folge ihren Anweisungen</li>
+                            <li>Hilf neuen Spielern und sei freundlich zur Community</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Verwarnung → Mute (1-7 Tage) → Tempban</div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Section 6: Mute/Ban Aufschreibung -->
-            <div class="rules-section-box">
-                <h2 class="rules-section-title">§ 6 STRAFE-VERWALTUNG & AUFSCHREIBUNG</h2>
-                <div class="rules-content">
-                    <div class="rule-item">
-                        <div class="rule-header">§ 6.1 - Strafe-Dokumentation</div>
-                        <p>Alle Strafen werden dokumentiert und mit Gründen aufgeschrieben. Diese sind einsehbar im Discord unter #mod-logs</p>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 6.2 - Mute System</div>
-                        <p><strong>Mute:</strong> Spieler kann nicht im Chat schreiben, kann aber den Server spielen
-                        <br><strong>Dauer:</strong> 1-7 Tage je nach Vergehen
-                        <br><strong>Aufhebung:</strong> Automatisch nach Ablauf der Zeit</p>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 6.3 - Tempban System</div>
-                        <p><strong>Tempban:</strong> Spieler kann den Server nicht betreten
-                        <br><strong>Dauer:</strong> 1-30 Tage je nach Vergehen
-                        <br><strong>Aufhebung:</strong> Automatisch nach Ablauf der Zeit oder Appeal möglich</p>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 6.4 - Permaban System</div>
-                        <p><strong>Permaban:</strong> Spieler wird permanent vom Server ausgeschlossen
-                        <br><strong>Gründe:</strong> Hacken, Doxxing, Diskriminierung, wiederholte schwere Verstöße
-                        <br><strong>Appeal:</strong> Nach 6 Monaten möglich im Discord mit guter Begründung</p>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 6.5 - Verwarn-System</div>
-                        <p><strong>Verwarnungen:</strong> 3 Verwarnungen = Mute
-                        <br><strong>Aufbewahrung:</strong> Verwarnungen verfallen nach 3 Monaten
-                        <br><strong>Einsicht:</strong> /warns Befehl zeigt deine aktuellen Verwarnungen</p>
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 5.2 - Chat-Regeln</h3>
+                    <div class="rule-text">
+                        <p><strong>Chat-Etikette:</strong> Nutze den Chat verantwortungsvoll.</p>
+                        <ul class="rule-list">
+                            <li>Deutsch ist die Hauptsprache (Englisch erlaubt, aber sekundär)</li>
+                            <li>Kein Spam: Wiederholte gleiche Nachrichten</li>
+                            <li>Kein CAPS LOCK Missbrauch (aLLeS gRoß IST aNnOyInG)</li>
+                            <li>Kein Flooding: Mehrere kurze Nachrichten hintereinander</li>
+                            <li>Keine Links zu fremden Servern oder Werbung</li>
+                            <li>Keine NSFW oder unangemessenen Inhalte</li>
+                        </ul>
+                        <div class="penalty-box"><strong>⚠️ Strafe bei Verstoß:</strong> Mute (1-3 Tage) → Mute (3-7 Tage) bei Wiederholung</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 7: Appeal & Einspruch -->
-            <div class="rules-section-box">
-                <h2 class="rules-section-title">§ 7 EINSPRUCH & APPEAL VERFAHREN</h2>
-                <div class="rules-content">
-                    <div class="rule-item">
-                        <div class="rule-header">§ 7.1 - Appeal Prozess</div>
-                        <p>Du hast das Recht, gegen eine Strafe Einspruch zu erheben. Reiche einen Appeal im Discord ein:
-                        <br>📝 Gehe zu <strong>#tickets</strong> und erstelle ein Ticket
-                        <br>⏳ Warte max. 7 Tage auf Antwort
-                        <br>📋 Begründe ausführlich, warum die Strafe unfair war</p>
+            <!-- Section 6: Strafsystem -->
+            <div class="rules-box">
+                <h2 class="rules-heading">§ 6 | STRAFSYSTEM & MODERATION</h2>
+                
+                <table class="penalty-table">
+                    <thead>
+                        <tr>
+                            <th>Vergehen</th>
+                            <th>1. Mal</th>
+                            <th>2. Mal</th>
+                            <th>3. Mal</th>
+                            <th>Maximale Strafe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Spam/Beleidigung</strong></td>
+                            <td>Verwarnung</td>
+                            <td>Mute 1-3 Tage</td>
+                            <td>Mute 3-7 Tage</td>
+                            <td>Tempban 7 Tage</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Griefing (leicht)</strong></td>
+                            <td>Plot-Abriss + Verwarnung</td>
+                            <td>Tempban 7 Tage</td>
+                            <td>Tempban 14 Tage</td>
+                            <td>PERMABAN</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Griefing (schwer)</strong></td>
+                            <td>Tempban 7-30 Tage</td>
+                            <td>Tempban 30 Tage</td>
+                            <td>-</td>
+                            <td>PERMABAN</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Diebstahl</strong></td>
+                            <td>Tempban 3-7 Tage + Strafe</td>
+                            <td>Tempban 14 Tage</td>
+                            <td>Tempban 30 Tage</td>
+                            <td>PERMABAN</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hacks/Cheats</strong></td>
+                            <td colspan="4" style="color: #ff3333; font-weight: bold;">SOFORT PERMABAN - KEINE AUSNAHMEN!</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Werbung/Links</strong></td>
+                            <td>Mute 7 Tage</td>
+                            <td>Tempban 3-7 Tage</td>
+                            <td>Tempban 14 Tage</td>
+                            <td>PERMABAN</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Diskriminierung</strong></td>
+                            <td colspan="4" style="color: #ff3333; font-weight: bold;">SOFORT PERMABAN!</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Doxxing/Bedrohung</strong></td>
+                            <td colspan="4" style="color: #ff3333; font-weight: bold;">SOFORT PERMABAN + MELDUNG!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Section 7: Appeals -->
+            <div class="rules-box">
+                <h2 class="rules-heading">§ 7 | APPEALS & EINSPRÜCHE</h2>
+                
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 7.1 - Appeal-Prozess</h3>
+                    <div class="rule-text">
+                        <p><strong>Du hast das Recht Einspruch zu erheben!</strong> Wenn du denkst, dass eine Strafe unfair ist, kannst du appealen.</p>
+                        <ul class="rule-list">
+                            <li>Erstelle ein Ticket im Discord unter #support</li>
+                            <li>Erkläre ruhig und sachlich, warum du die Strafe unfair findest</li>
+                            <li>Warte max. 7 Tage auf eine Antwort</li>
+                            <li>Sei höflich und argumentiere konstruktiv</li>
+                            <li>Mehrfache Spam-Appeals führen zu Mute</li>
+                        </ul>
                     </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 7.2 - Erfolgreiche Appeals</div>
-                        <p>Wenn dein Appeal akzeptiert wird:
-                        <br>✓ Strafe wird aufgehoben
-                        <br>✓ Du wirst auf den Server zurückkehren
-                        <br>✓ Verwarnung wird gelöscht</p>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-header">§ 7.3 - Abgelehnte Appeals</div>
-                        <p>Wenn dein Appeal abgelehnt wird:
-                        <br>✗ Die Strafe bleibt bestehen
-                        <br>✗ Du kannst nach 1 Monat einen neuen Appeal einreichen
-                        <br>✗ Mehrere Spam-Appeals führen zu Mute</p>
+                </div>
+
+                <div class="rule-group">
+                    <h3 class="rule-title">§ 7.2 - Erfolgreiche vs. Abgelehnte Appeals</h3>
+                    <div class="rule-text">
+                        <p><strong>Erfolgreicher Appeal:</strong></p>
+                        <ul class="rule-list">
+                            <li>✅ Strafe wird aufgehoben</li>
+                            <li>✅ Du kannst wieder spielen/chatten</li>
+                            <li>✅ Verwarnung wird aus deiner Akte gelöscht</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>Abgelehnter Appeal:</strong></p>
+                        <ul class="rule-list">
+                            <li>❌ Strafe bleibt bestehen</li>
+                            <li>❌ Du kannst nach 1 Monat erneut appealen</li>
+                            <li>❌ Zu viele Spam-Appeals = Mute</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Support Box -->
-            <div class="support-info">
-                <h3>❓ FRAGEN ODER PROBLEME?</h3>
-                <p>Kontaktiere unsere Moderatoren und Administratoren auf unserem Discord Server</p>
-                <div class="support-buttons">
-                    <a href="https://discord.gg/frA4bwy8ph" target="_blank" class="btn btn-primary">DISCORD SERVER</a>
-                </div>
+            <div class="final-notice">
+                <h3>📋 WICHTIG ZU WISSEN</h3>
+                <p>Diese Regeln sind verbindlich und werden von unserem Mod-Team durchgesetzt. Unkenntnis ist keine Ausrede. Lies die Regeln sorgfältig durch und stelle Fragen im Discord falls etwas unklar ist.</p>
+                <p><strong>Viel Spaß beim Spielen und auf DrevSMP!</strong></p>
             </div>
         </div>
     </section>
