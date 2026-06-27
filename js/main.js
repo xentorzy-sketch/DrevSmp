@@ -46,7 +46,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-const elements = document.querySelectorAll('.feature-card, .rule-card, .step, .tutorial-card');
+const elements = document.querySelectorAll('.feature-card, .rule-card, .step, .stat-card, .command-card');
 elements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
@@ -65,17 +65,17 @@ navLinks.forEach(link => {
     }
 });
 
-// Mobile menu toggle (if needed)
+// Scroll effect for navbar
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.5)';
+        navbar.style.boxShadow = '0 8px 32px rgba(0, 217, 255, 0.2)';
     } else {
-        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.3)';
+        navbar.style.boxShadow = '0 8px 32px rgba(0, 217, 255, 0.1)';
     }
 });
 
-// Add loading animation
+// Loading animation
 window.addEventListener('load', () => {
     document.body.style.opacity = '1';
 });
@@ -83,3 +83,35 @@ window.addEventListener('load', () => {
 if (document.readyState !== 'loading') {
     document.body.style.opacity = '1';
 }
+
+// Counter animation
+function animateCounter(element, target, duration = 2000) {
+    let current = 0;
+    const increment = target / (duration / 16);
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 16);
+}
+
+// Observe stat numbers for animation
+const statNumbers = document.querySelectorAll('.stat-number');
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const text = entry.target.textContent;
+            const number = parseInt(text);
+            if (!isNaN(number)) {
+                animateCounter(entry.target, number);
+                statsObserver.unobserve(entry.target);
+            }
+        }
+    });
+});
+
+statNumbers.forEach(num => statsObserver.observe(num));

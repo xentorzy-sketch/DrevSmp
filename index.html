@@ -3,82 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DrevSMP - Exklusiver Minecraft CitybBuild Server">
-    <title>DrevSMP | Minecraft CitybBuild</title>
+    <meta name="description" content="DrevSMP - Das ultimative Minecraft CitybBuild Server Erlebnis">
+    <meta name="theme-color" content="#00d9ff">
+    <title>DrevSMP | Premium Minecraft CitybBuild</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
+        <div class="container nav-container">
             <div class="logo">DrevSMP</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="rules.html">Rules</a></li>
                 <li><a href="join.html">Beitreten</a></li>
-                <li><a href="#discord" class="btn-discord">Discord</a></li>
+                <li><a href="https://discord.gg/frA4bwy8ph" target="_blank" class="btn-discord">Discord</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particleCanvas"></canvas>
         <div class="hero-content">
-            <h1>DrevSMP</h1>
-            <p>Das ultimative CitybBuild Erlebnis</p>
+            <div class="hero-badge">🎮 PREMIUM CITYBUILD SERVER</div>
+            <h1 class="hero-title">DrevSMP</h1>
+            <p class="hero-subtitle">Das ultimative Minecraft CitybBuild Erlebnis</p>
             <p class="server-ip">🎮 IP: <strong>Play.drevsmp.de</strong></p>
             <div class="hero-buttons">
-                <a href="join.html" class="btn btn-primary">Jetzt Beitreten</a>
-                <a href="https://discord.gg/frA4bwy8ph" target="_blank" class="btn btn-secondary">Discord Server</a>
+                <a href="join.html" class="btn btn-primary btn-glow">Jetzt Beitreten</a>
+                <a href="https://discord.gg/frA4bwy8ph" target="_blank" class="btn btn-secondary btn-glow">Discord Server</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Spieler</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Online</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Städte</span>
+                </div>
             </div>
         </div>
-        <div class="hero-overlay"></div>
     </section>
 
+    <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <h2>Was macht DrevSMP besonders?</h2>
+            <h2 class="section-title">Warum DrevSMP?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🏗️</div>
                     <h3>Premium CitybBuild</h3>
-                    <p>Baue deine eigene Stadt in einer professionellen Umgebung mit anderen Spielern</p>
+                    <p>Baue deine Stadt mit absoluter Freiheit in einer professionellen Umgebung</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">👥</div>
-                    <h3>Community</h3>
-                    <p>Triff Gleichgesinnte Spieler und arbeite zusammen an epischen Projekten</p>
+                    <h3>Aktive Community</h3>
+                    <p>Tausende Spieler bauen gemeinsam an epischen Projekten</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
-                    <h3>High-End Events</h3>
-                    <p>Regelmäßige Events und Turniere mit großartigen Preisen</p>
+                    <h3>Events & Turniere</h3>
+                    <p>Wöchentliche Events mit epischen Preisen und Challenges</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚙️</div>
-                    <h3>Professionelle Verwaltung</h3>
-                    <p>Faire Regeln und erfahrene Administratoren für ein reibungsloses Spielerlebnis</p>
+                    <h3>Pro Administration</h3>
+                    <p>Faire Regeln und 24/7 Support von erfahrenen Moderatoren</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Sicher & Stabil</h3>
+                    <p>Anti-Grief Systeme und Backups für maximale Sicherheit</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Premium Perks</h3>
+                    <p>Exklusive Features und Customization für alle Spieler</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta">
+    <!-- Server Stats -->
+    <section class="server-stats">
         <div class="container">
-            <h2>Bereit zum Spielen?</h2>
-            <p>Tritt DrevSMP bei und werde Teil einer einzigartigen Community</p>
-            <a href="join.html" class="btn btn-large">Beitrittsleitfaden</a>
+            <h2 class="section-title">Server Statistiken</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">99.9%</div>
+                    <div class="stat-name">Uptime</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">5ms</div>
+                    <div class="stat-name">Ping</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">1000+</div>
+                    <div class="stat-name">Städte</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">50</div>
+                    <div class="stat-name">Mods</div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to build?</h2>
+            <p>Werde Teil der größten CitybBuild Community</p>
+            <a href="join.html" class="btn btn-large btn-glow">Beitrittsleitfaden</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 DrevSMP. Alle Rechte vorbehalten.</p>
-            <p>Minecraft ist ein Produkt von Mojang Studios</p>
-            <div class="social-links">
-                <a href="https://discord.gg/frA4bwy8ph" target="_blank">Discord</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DrevSMP</h3>
+                    <p>Das ultimative Minecraft CitybBuild Erlebnis mit Premium Features und 24/7 Support.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="join.html">Beitreten</a></li>
+                        <li><a href="https://discord.gg/frA4bwy8ph" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="https://discord.gg/frA4bwy8ph" target="_blank">Discord Server</a></li>
+                        <li>IP: Play.drevsmp.de</li>
+                        <li>Version: 1.20+</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DrevSMP. All rights reserved.</p>
+                <p>Minecraft ist ein Produkt von Mojang Studios</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

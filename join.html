@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beitreten | DrevSMP</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <div class="container">
+        <div class="container nav-container">
             <div class="logo"><a href="index.html">DrevSMP</a></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -19,23 +20,23 @@
         </div>
     </nav>
 
-    <section class="join-section">
+    <section class="join-section" id="join">
         <div class="container">
-            <h1>So trittst du DrevSMP bei</h1>
-            <p class="subtitle">Folge einfach diesen Schritten, um Teil unserer Community zu werden</p>
+            <h1>Wie du DrevSMP beitrittst</h1>
+            <p class="subtitle">5 einfache Schritte um in die Community zu gelangen</p>
 
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Discord beitreten</h3>
-                    <p>Tritt unserem Discord-Server bei, um mit der Community in Kontakt zu kommen und Ankündigungen zu erhalten.</p>
+                    <p>Tritt unserem Discord-Server bei und connect dich mit der Community</p>
                     <a href="https://discord.gg/frA4bwy8ph" target="_blank" class="btn btn-primary">Discord Server</a>
                 </div>
 
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Server-IP kopieren</h3>
-                    <p>Kopiere die Server-IP unten. Du wirst sie beim Verbinden brauchen.</p>
+                    <p>Kopiere die Server-Adresse mit einem Klick</p>
                     <div class="ip-box">
                         <code>Play.drevsmp.de</code>
                         <button class="copy-btn" onclick="copyToClipboard()">📋 Kopieren</button>
@@ -45,92 +46,70 @@
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Minecraft öffnen</h3>
-                    <p>Öffne Minecraft und gehe zum Multiplayer-Menü. Klicke auf "Server hinzufügen".</p>
+                    <p>Starten Sie Minecraft und gehen Sie zum Multiplayer-Menü</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Server-Daten eingeben</h3>
-                    <p>
-                        <strong>Servername:</strong> DrevSMP<br>
-                        <strong>Server-Adresse:</strong> Play.drevsmp.de
-                    </p>
+                    <h3>Server hinzufügen</h3>
+                    <p><strong>Name:</strong> DrevSMP<br><strong>IP:</strong> Play.drevsmp.de</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number">5</div>
-                    <h3>Verbinden</h3>
-                    <p>Klicke auf den Server und wähle "Verbinden". Willkommen bei DrevSMP! 🎉</p>
+                    <h3>Spielen!</h3>
+                    <p>Verbinden Sie sich und genießen Sie das Abenteuer! 🎉</p>
                 </div>
             </div>
 
-            <div class="tutorial-section">
-                <h2>📖 Anfänger-Tutorial</h2>
-                <div class="tutorial-content">
-                    <div class="tutorial-card">
-                        <h3>1️⃣ Erste Schritte</h3>
-                        <p>Wenn du das erste Mal den Server betrittst, wirst du im Spawn-Punkt landen. Schau dich um und mache dich mit der Umgebung vertraut.</p>
-                    </div>
+            <!-- Video Tutorial -->
+            <div class="video-section">
+                <h2>📺 Video Tutorial</h2>
+                <div class="video-placeholder">
+                    <p>▶️ Schau dir unser Beitrittsvideo an</p>
+                </div>
+            </div>
 
-                    <div class="tutorial-card">
-                        <h3>2️⃣ Ein Grundstück finden</h3>
-                        <p>Nutze den Befehl <code>/plot auto</code>, um automatisch ein freies Grundstück zu erhalten. Alternativ kannst du mit <code>/plot claim</code> ein Grundstück manuell claimen.</p>
+            <!-- Quick Commands -->
+            <div class="quick-commands">
+                <h2>⚡ Schnelle Befehle</h2>
+                <div class="commands-grid">
+                    <div class="command-card">
+                        <code>/plot auto</code>
+                        <p>Gratis Grundstück erhalten</p>
                     </div>
-
-                    <div class="tutorial-card">
-                        <h3>3️⃣ Mit dem Bauen beginnen</h3>
-                        <p>Sobald du ein Grundstück hast, kannst du mit dem Bauen beginnen. Achte auf die Regeln und respektiere die Nachbargrundstücke.</p>
+                    <div class="command-card">
+                        <code>/plot home</code>
+                        <p>Zu deinem Plot teleportieren</p>
                     </div>
-
-                    <div class="tutorial-card">
-                        <h3>4️⃣ Mit anderen interagieren</h3>
-                        <p>Nimm am Community-Leben teil! Besuche andere Bauten, hilf anderen Spielern und nimm an Events teil.</p>
+                    <div class="command-card">
+                        <code>/discord</code>
+                        <p>Discord Link öffnen</p>
+                    </div>
+                    <div class="command-card">
+                        <code>/rules</code>
+                        <p>Serverregeln anzeigen</p>
+                    </div>
+                    <div class="command-card">
+                        <code>/spawn</code>
+                        <p>Zum Spawn teleportieren</p>
+                    </div>
+                    <div class="command-card">
+                        <code>/help</code>
+                        <p>Alle Befehle anzeigen</p>
                     </div>
                 </div>
             </div>
 
-            <div class="useful-commands">
-                <h2>⌨️ Nützliche Befehle</h2>
-                <table class="commands-table">
-                    <tr>
-                        <th>Befehl</th>
-                        <th>Beschreibung</th>
-                    </tr>
-                    <tr>
-                        <td><code>/plot auto</code></td>
-                        <td>Weist dir automatisch ein freies Grundstück zu</td>
-                    </tr>
-                    <tr>
-                        <td><code>/plot claim</code></td>
-                        <td>Claimt das Grundstück, auf dem du stehst</td>
-                    </tr>
-                    <tr>
-                        <td><code>/plot home</code></td>
-                        <td>Teleportiert dich zu deinem Grundstück</td>
-                    </tr>
-                    <tr>
-                        <td><code>/plot members</code></td>
-                        <td>Verwaltet Mitglieder deines Grundstücks</td>
-                    </tr>
-                    <tr>
-                        <td><code>/discord</code></td>
-                        <td>Öffnet den Discord-Link</td>
-                    </tr>
-                    <tr>
-                        <td><code>/rules</code></td>
-                        <td>Zeigt die Serverregeln</td>
-                    </tr>
-                    <tr>
-                        <td><code>/help</code></td>
-                        <td>Zeigt alle verfügbaren Befehle</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="cta-box">
-                <h2>Bereit zu spielen?</h2>
-                <p>Verbinde dich jetzt mit dem Server und werde Teil der DrevSMP-Community!</p>
-                <p class="server-ip-large">🎮 <strong>Play.drevsmp.de</strong></p>
+            <!-- Requirements -->
+            <div class="requirements">
+                <h2>📋 Anforderungen</h2>
+                <ul>
+                    <li>✅ Minecraft Java Edition 1.20 oder höher</li>
+                    <li>✅ Stabiles Internet (mindestens 10 Mbps)</li>
+                    <li>✅ Discord Account (empfohlen)</li>
+                    <li>✅ Lust zum Bauen und Community-Teil sein</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -138,7 +117,6 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 DrevSMP. Alle Rechte vorbehalten.</p>
-            <p>Minecraft ist ein Produkt von Mojang Studios</p>
         </div>
     </footer>
 
