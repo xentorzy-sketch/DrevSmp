@@ -1,0 +1,25 @@
+# GitHub Pages Configuration for DrevSMP
+
+title: DrevSMP
+description: Das ultimative Minecraft CitybBuild Server Erlebnis
+theme: null
+
+# Social Media
+social:
+  links:
+    - https://discord.gg/frA4bwy8ph
+
+# URL Configuration
+url: https://xentorzy-sketch.github.io
+baseurl: /DrevSmp
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - .gitignore
+  - LICENSE
+  - README.md
